@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Comment Gitee</title>
+	<link rel="stylesheet" href="giteecomment.css">
+</head>
+<body>
+	<h1>Comments</h1>
+<div id="container"></div>
+<script src="giteecomment.js"></script>
+<script>
+var gitment = new Gitment({
+  // id: '', // 可选。默认为 location.href
+  owner: 'hongwing',
+  repo: 'CommentsGitment',
+  //repo: 'CommentsGitee',
+  oauth: {
+    client_id: '16dfe2eafc13f9ea1b26',
+    client_secret: '3862a108c8d800335f07ad8935e9ca07a5ed9fe5',
+  },
+})
+gitment.render('container')
+</script>
+</body>
+</html>
